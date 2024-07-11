@@ -1,0 +1,62 @@
+{
+	"name": "VisualSmsMetaTags",
+	"author": "sms-it",
+	"version": "1.0.0",
+	"url": "http://sms-it.ru",
+	"license-name": "GPL-2.0+",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"ext.VisualSmsMetaTags": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SmsMetasHooks": "SmsMetasHooks.php"
+	},
+	"ResourceModules": {
+		"ext.VisualSmsMetaTags.visualEditor": {
+			"scripts": [
+				"ve/ve.ui.SmsMetasInputWidget.js",
+				"ve/ve.dm.SmsMetasAnnotationDiv.js",
+				"ve/ve.ce.SmsMetasAnnotationDiv.js",
+				"ve/ve.ui.SmsMetasInspectorDiv.js",
+				"ve/ve.ui.SmsMetasContextItemDiv.js",
+				"ve/ve.ui.SmsMetasInspectorToolDiv.js",
+				"ve/ve.ui.SmsMetasAction.js"
+			],
+			"styles": [
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore",
+				"ext.visualEditor.core",
+				"ext.visualEditor.mwextensions",
+				"ext.visualEditor.mediawiki"
+			],
+			"messages": [
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "VisualSmsMetaTags/modules"
+	},
+	"VisualEditorPluginModules": [
+		"ext.VisualSmsMetaTags.visualEditor"
+	],
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"SmsMetasHooks::efSmsMetasParserFirstCallInit"
+		],
+		"OutputPageBeforeHTML": [
+			"SmsMetasHooks::SmsMetasFilter_BeforeHTML"
+		],
+		"SkinTemplateNavigation": [
+			"SmsMetasHooks::contentHook"
+		]
+	},
+	"manifest_version": 1
+}

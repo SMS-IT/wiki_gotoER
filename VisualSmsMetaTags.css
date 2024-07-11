@@ -1,0 +1,76 @@
+/*Добавить в customizations/custom.css*/
+.smsmetas {
+    display: inline-block;
+    background: #d8fad6;
+}
+
+.smsmetas-sub {
+    display: inline-flex !important;
+}
+
+.in-develop-smsmetas {
+    background: #cbffd4;
+}
+
+.smsmetas .smsmetas-db {
+    min-height: 10px;
+    display: inline-block;
+    background: #b7eeb4;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    line-height: 10px;
+    padding: 5px;
+}
+
+.smsmetas-right {
+    background-color: #e0fade;
+    width: 100%;
+}
+
+.smsmetas-content {
+    margin-right: 3px;
+    margin-left: 5px;
+    word-break: break-word;
+}
+
+.smsmetas-content-empty {
+    margin-left: 1px;
+    word-break: break-word;
+}
+
+.smsmetas-content s {
+    color: black;
+}
+
+.smsmetas-margin-right {
+    margin-right: 5px;
+}
+
+.smsmetas-right .smsmetas-db-right {
+    min-height: 10px;
+    display: inline-block;
+    background: #b7eeb4;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    line-height: 10px;
+    padding: 5px;
+}
+
+.ve-ce-smsmetasDiv .smsmetadb {
+    background: #d8fad6;
+    color: #606060;
+    font-size: smaller;
+    pointer-events: none;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 10px 0px 0px;
+    float: left;
+}
+
+.smsmetas-lamp-icon {
+    width: 16px;
+}
